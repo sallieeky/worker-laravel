@@ -180,27 +180,27 @@ https://templatemo.com/tm-512-moonlight
                                 <div class="col-md-12">
                                     <h2 style="color: white; margin-top: -5px"><b>HUBUNGI</b> SAYA</h2><hr>
                                   <fieldset>
-                                    <input name="name" type="text" class="form-control" id="name" placeholder="Nama Lengkap . . ." required="">
+                                    <input name="name" type="text" class="form-control" id="name1" placeholder="Nama Lengkap . . ." required="">
                                   </fieldset>
                                 </div>
                                 <div class="col-md-12">
                                   <fieldset>
-                                    <input name="email" type="email" class="form-control" id="email" placeholder="Email . . ." required="">
+                                    <input name="email" type="email" class="form-control" id="email1" placeholder="Email . . ." required="">
                                   </fieldset>
                                 </div>
                                  <div class="col-md-12">
                                   <fieldset>
-                                    <input name="subject" type="text" class="form-control" id="subject" placeholder="Subjek . . ." required="">
+                                    <input name="subject" type="text" class="form-control" id="subject1" placeholder="Subjek . . ." required="">
                                   </fieldset>
                                 </div>
                                 <div class="col-md-12">
                                   <fieldset>
-                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Masukkan Pesan . . ." required=""></textarea>
+                                    <textarea name="message" rows="6" class="form-control" id="message1" placeholder="Masukkan Pesan . . ." required=""></textarea>
                                   </fieldset>
                                 </div>
                                 <div class="col-md-12">
                                   <fieldset>
-                                    <button type="submit" id="form-submit" class="btn">Kirim Pesan</button>
+                                    <button type="submit" id="kirim" class="btn">Kirim Pesan</button>
                                   </fieldset>
                                 </div>
                             </div>
@@ -273,7 +273,34 @@ https://templatemo.com/tm-512-moonlight
 
     <script type="text/javascript">
     $(document).ready(function() {
+        // const kirim = document.getElementById("kirim");
+        // const name1 = document.getElementById("name1");
+        // const email1 = document.getElementById("email1");
+        // const subject1 = document.getElementById("subject1");
+        // const message1 = document.getElementById("message1");
+        // const loading = document.getElementById("loading");
 
+        // kirim.addEventListener("click", function() {
+        //     loading.style.display = 'unset'
+        //     fetch('{{ url('/api/tes') }}', {
+        //         method: 'POST',
+        //         headers: {
+        //             Accept: 'application/json',
+        //             'Content-Type': 'application/json'
+        //         },
+        //         body: JSON.stringify({
+        //             name: name1.value, 
+        //             email: email1.value,
+        //             subject: subject1.value,
+        //             message: message1.value,
+        //         })
+        //     })
+        //     .then(response => response.json())
+        //     .then(json => {
+        //         loading.style.display = 'none'
+        //         console.log(json)
+        //     })
+        // })
         
 
         // navigation click actions 
@@ -310,5 +337,6 @@ https://templatemo.com/tm-512-moonlight
         };
     }
     </script>
+
 </body>
 </html>
