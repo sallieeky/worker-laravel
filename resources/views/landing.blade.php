@@ -68,6 +68,7 @@ https://templatemo.com/tm-512-moonlight
               </div>
             </div>
           </div>
+
           <div class="slide" id="2">
             <div class="content second-content">
                 <div class="container-fluid">
@@ -218,10 +219,6 @@ https://templatemo.com/tm-512-moonlight
               <p>Copyright &copy; 2020 Company Name . Template: <a rel="nofollow" href="https://templatemo.com/tm-512-moonlight">Moonlight</a></p>
           </div>
         </div>
-
-
-
-
 
         @auth
         <!-- Modal -->
