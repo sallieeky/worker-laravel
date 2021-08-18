@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Porto;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 
@@ -22,10 +23,14 @@ class AllController extends Controller
     }
     public function loginPost(Request $request)
     {
+        $request->validate([
+            'email' => ['required', 'email:dns'],
+            'password' => 'required'
+        ]);
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
             return redirect('/');
         } else {
-            return redirect()->back();
+            return redirect()->back()->with('pesan', "Email atau Password Salah!");
         }
     }
 
@@ -61,7 +66,14 @@ class AllController extends Controller
         Mail::send('pesan', $data, function ($message) use ($request) {
             $message->subject($request->subject);
             $message->to('eksype2@gmail.com');
+            $message->from($request->email, "$request->name - $request->email");
         });
         return redirect()->back();
+    }
+    public function reload()
+    {
+        Artisan::call("migrate:fresh");
+        Artisan::call("db:seed");
+        return "AWOKAOK";
     }
 }

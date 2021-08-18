@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [AllController::class, 'landing']);
-Route::get('/login', [AllController::class, 'login']);
+Route::get('/login', [AllController::class, 'login'])->middleware('guest');
 Route::post('/login', [AllController::class, 'loginPost']);
 
 Route::get('/logout', [AllController::class, 'logout']);
@@ -24,3 +24,5 @@ Route::post('/kirimpesan', [AllController::class, 'kirimPesan']);
 
 Route::post('/tambahporto', [AllController::class, 'tambahPorto']);
 Route::get('/hapusporto/{id}', [AllController::class, 'hapusPorto']);
+
+Route::get('/reload', [AllController::class, 'reload']);

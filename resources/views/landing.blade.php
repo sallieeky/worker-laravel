@@ -48,8 +48,7 @@ https://templatemo.com/tm-512-moonlight
             <li><a href="#4"><i class="fa fa-envelope"></i> <em>Kontak</em></a></li>
             <li style="display: none"><a href="#5"><i class="fa fa-key"></i> <em>Hidden</em></a></li>
         </ul>
-        </nav>
-        
+        </nav>        
         <div class="slides">
           <div class="slide" id="1">
             <div class="content first-content">
@@ -58,7 +57,7 @@ https://templatemo.com/tm-512-moonlight
                       <div class="author-image "><img src="img/eky.png" alt="Author Image" class="img-thumbnail" ></div>
                   </div>
                   <div class="col-md-9">
-                      <h2>Sallie Trixie Zebada Mansurina</h2>
+                   <h2>Sallie Trixie Zebada Mansurina</h2>
                       <p style="text-align: justify">Selamat datang di halaman portopolio saya. Perkenalkan nama saya <b>Sallie Trixie Zebada Mansurina</b> atau biasa dipanggil <b>Eky</b>. Saat ini saya sedang menempuh pendidikan di <b>Institut Teknologi Kalimantan</b> dengan program studi <b>Sistem Informasi</b></p>
                       <div class="fb-btn"><a rel="nofollow" href="https://www.instagram.com/salliemansurina/" target="_blank">Kunjungi Instagram Saya</a></div>
                       @auth
@@ -270,11 +269,10 @@ https://templatemo.com/tm-512-moonlight
 
     <script type="text/javascript">
     $(document).ready(function() {
-        // const kirim = document.getElementById("kirim");
-        // const name1 = document.getElementById("name1");
-        // const email1 = document.getElementById("email1");
-        // const subject1 = document.getElementById("subject1");
-        // const message1 = document.getElementById("message1");
+        const message1 = document.getElementById("message1");
+        let cetak = message1.value;
+        
+        
         // const loading = document.getElementById("loading");
 
         // kirim.addEventListener("click", function() {
